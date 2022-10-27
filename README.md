@@ -9,15 +9,15 @@
 
 ## Terms of use
 
-    * To get a local copy of the repo follow the following simple steps:
-    * Install Git in your machine
-    * Go to the repository page.
-    * Press the "Code" button and copy the link.
-    * Finally, Clone it using git command git clone <link>
+    - To get a local copy of the repo follow the following simple steps:
+    - Install Git in your machine
+    - Go to the repository page.
+    - Press the "Code" button and copy the link.
+    - Finally, Clone it using git command git clone <link>
 
 # Authors
 
-    * Tekhlay
+    - Tekhlay
 
 # Acknowledgments
 
