@@ -1,0 +1,27 @@
+{
+  "name": "microverse-portfolio-website",
+  "version": "1.0.0",
+  "description": "> In this project, I set up my first portfolio repository in microverse. for now my main milstone is going to create the 2 main section of Theme1 microverse template and i will more updates soon. I will develop customizable portfolio website for mobile and desktop versions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tekhlay/microverse-portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tekhlay/microverse-portfolio-website/issues"
+  },
+  "homepage": "https://github.com/Tekhlay/microverse-portfolio-website#readme",
+  "devDependencies": {
+    "hint": "^7.1.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
