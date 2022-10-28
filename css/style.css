@@ -161,7 +161,7 @@ a {
   font-size: 40px;
   line-height: 52px;
   position: relative;
-  display: flex;
+  display: grid;
   align-items: center;
   text-align: center;
 }
@@ -177,6 +177,8 @@ a {
 .work-container {
   width: 327px;
   height: 474px;
+  display: flex;
+  flex-direction: column;
   margin: 62px 22px 24px 26px;
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
@@ -250,6 +252,12 @@ a {
   line-height: 16px;
 }
 
+.languages a:hover {
+  opacity: 0.8;
+  background-color: #091e42;
+  color: white;
+}
+
 .see-project {
   display: flex;
   flex-direction: row;
@@ -265,6 +273,11 @@ a {
   border: 0;
   background: #36b37f;
   border-radius: 4px;
+}
+
+.txt-info button:active {
+  opacity: 0.8;
+  color: #60c095;
 }
 
 .project-title {
@@ -284,11 +297,18 @@ a {
 }
 
 .abt {
+  display: flex;
+  flex-direction: column;
   width: 327px;
   margin-top: 2em;
   background: url(../images/illustration\ 1-\ about\ me-mobile.png) no-repeat 100% 0%, url(../images/illustration\ 2-about\ me\ mobile.png) no-repeat 0 300px;
   text-align: center;
   padding: 2em;
+}
+
+.abt-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .abtme {
