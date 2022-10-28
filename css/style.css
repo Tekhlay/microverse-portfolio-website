@@ -62,7 +62,7 @@ body {
   align-items: center;
   padding: 64px 24px;
   gap: 58px;
-  position: absolute;
+  position: relative;
   width: 375px;
   height: 726px;
   left: 0;
@@ -149,4 +149,325 @@ a {
 .img-btn {
   max-width: 100%;
   display: block;
+}
+
+.myrecentwork {
+  width: 327px;
+  height: 97px;
+  padding: 22px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.ind {
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  border-radius: 24px;
+  margin: 24px 160px;
+}
+
+.work-container {
+  width: 327px;
+  height: 474px;
+  margin: 62px 22px 24px 26px;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.img-placer img {
+  width: 100%;
+  height: 250px;
+}
+
+.txt-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  height: 187px;
+  left: calc(50% - 327px / 2);
+  position: relative;
+  bottom: 0;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.work-title {
+  width: 295px;
+  height: 57px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.languages {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.social-link a {
+  width: 375px;
+  height: 189px;
+  margin-top: 19px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  text-align: center;
+}
+
+.languages li a {
+  background: #ebf0ee;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px 8px;
+  color: #3a4a42;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.see-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 29px 0 0 0;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  width: 122px;
+  height: 48px;
+  left: calc(50% - 122px / 2 + 0.5px);
+  bottom: 8px;
+  border: 0;
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+.project-title {
+  width: 98px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  flex: none;
+}
+
+.abt {
+  width: 327px;
+  margin-top: 2em;
+  background: url(../images/illustration\ 1-\ about\ me-mobile.png) no-repeat 100% 0%, url(../images/illustration\ 2-about\ me\ mobile.png) no-repeat 0 300px;
+  text-align: center;
+  padding: 2em;
+}
+
+.abtme {
+  width: 351px;
+  height: 48px;
+  margin: 68px 12px 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.abt-info {
+  margin: 24px 12px;
+  width: 351px;
+  height: 189px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  flex: none;
+  order: 1;
+}
+
+.abt-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 159px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  flex: none;
+  order: 2;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 20px 100px;
+}
+
+.abt-wrapper {
+  width: 327px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px 0 0 0;
+  margin: 59px 24px;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.circle-img {
+  left: calc(50% - 80px / 2 + 0.5px);
+  top: calc(50% - 80px / 2);
+}
+
+.abts-head {
+  width: 337px;
+  height: 32px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.works-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  order: 1;
+  margin-top: 30px;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.works-details li {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 16px;
+  color: #36b37e;
+}
+
+.footer-container {
+  width: 327px;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/illustration-contact-form.png) no-repeat 100% 90%;
+  padding: 2em 5em;
+}
+
+.footer-title h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.footer-form {
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.input {
+  width: 327px;
+  height: 48px;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 24px;
+  bottom: 0;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+}
+
+.footer-form textarea {
+  width: 327px;
+  height: 114px;
+  margin: 24px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  left: 12px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
 }
