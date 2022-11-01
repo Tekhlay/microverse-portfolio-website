@@ -357,8 +357,7 @@ a {
 }
 
 .abt-btn {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   align-items: center;
   padding: 12px;
   gap: 10px;
@@ -377,6 +376,10 @@ a {
   font-size: 17px;
   line-height: 24px;
   margin: 20px 100px;
+}
+
+.abt-btn:hover {
+  background-color: blue;
 }
 
 .abt-wrapper {
