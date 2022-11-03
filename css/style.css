@@ -371,15 +371,20 @@ li {
 
 .abt-wrapper {
   width: 327px;
+  height: 352px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 30px 0 0 0;
   margin: 10px 24px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
+}
+
+.abt-card:hover {
+  transform: scale(1.5);
 }
 
 .circle-img {
@@ -403,14 +408,14 @@ li {
 }
 
 .works-details {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2);
-  row-gap: 8px;
+  row-gap: 8px; */
   list-style: none;
-  margin: 24px;
-  justify-items: center;
-  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
 }
 
 .works-details li {
@@ -424,6 +429,7 @@ li {
   font-size: 12px;
   line-height: 16px;
   color: #36b37e;
+  margin: 10px 5px;
   text-align: center;
 }
 
@@ -700,7 +706,9 @@ li {
   }
 
   .footer-container {
-    background: url(../images/contact\ form-illustratoin-3-desktop.png) no-repeat 100% 90%, url(../images/illustration-2-contact-form-desktop@2x.png) no-repeat 20% 90%, url(../images/illustration-1-contact-form-desktop.png) no-repeat 0 300px;
+    background: url(../images/contact\ form-illustratoin-3-desktop.png) no-repeat 100% 90%, 
+    url(../images/illustration-2-contact-form-desktop@2x.png) no-repeat 30% 90%, 
+    url(../images/illustration-1-contact-form-desktop.png) no-repeat 0% 90%;
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
@@ -775,6 +783,10 @@ li {
   .footer-form button {
     align-items: baseline;
     margin-left: 0;
+  }
+  
+  .footer-container .social-link {
+    margin-top: 112px;
   }
 
   .emai-address {
