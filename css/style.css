@@ -141,14 +141,14 @@ li {
   margin: 0 8px;
 }
 
-a {
+.social-link a {
   text-decoration: none;
 }
 
 .head-btn button {
   width: 260px;
   height: 40px;
-  padding: 0px;
+  padding: 0;
   margin-left: -150px;
   position: absolute;
   bottom: 100px;
@@ -182,7 +182,7 @@ a {
   line-height: 52px;
   position: relative;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .ind {
@@ -210,7 +210,6 @@ a {
   width: 326px;
   height: 252px;
 }
-
 
 .txt-info {
   max-width: 100%;
@@ -311,12 +310,11 @@ a {
   background: url(../images/illustration\ 1-\ about\ me-mobile.png) no-repeat 100% 0%, url(../images/illustration\ 2-about\ me\ mobile.png) no-repeat 0 300px;
   width: 375px;
   height: 1625px;
-  left: 0px;
+  left: 0;
   top: 3927px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .abt-container {
@@ -326,7 +324,7 @@ a {
 }
 
 .abtme {
-  margin: 60px 0px 14px 0px;
+  margin: 60px 0 14px 0;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -373,7 +371,6 @@ a {
   align-items: center;
   padding: 1px;
   gap: 24px;
-
 }
 
 .abt-wrapper {
@@ -438,7 +435,7 @@ a {
   width: 375px;
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 0;
   align-items: center;
   background: url(../images/illustration-contact-form.png) no-repeat 100% 90%;
 }
@@ -545,13 +542,13 @@ a {
 
   .header-nav-desktop a {
     text-decoration: none;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-    margin: 16px; 
+    margin: 16px;
   }
 
   .header-nav-desktop a:hover {
@@ -578,7 +575,7 @@ a {
   .header-title {
     width: 920px;
     height: 114px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 38px;
@@ -633,7 +630,7 @@ a {
   .myrecentwork {
     width: 447px;
     height: 48px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -717,21 +714,21 @@ a {
     top: 3139px;
   }
 
- .footer-card {
-  margin: 0px 135px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 80px 0px;
-  gap: 24px;
-  width: 1171px;
-  height: 490px;
+  .footer-card {
+    margin: 0 135px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 80px 0;
+    gap: 24px;
+    width: 1171px;
+    height: 490px;
   }
 
   .footer-title h2 {
     width: 463px;
     height: 256px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -753,8 +750,9 @@ a {
   .txt1 {
     display: none;
   }
-  
-  .fulname, .email {
+
+  .fulname,
+  .email {
     height: 40px;
     margin: 2px;
     float: left;
@@ -764,8 +762,8 @@ a {
     display: block;
     width: 100%;
     height: 60px;
-    margin: 0px;
-    padding: 0 0px 0px;
+    margin: 0;
+    padding: 0 0 0;
     box-sizing: border-box;
     background: #fff;
     border: 1px solid #60c095;
@@ -778,9 +776,9 @@ a {
     color: #091e42;
   }
 
-  .abt-btn {
+  .footer-form button {
     align-items: baseline;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .emai-address {
