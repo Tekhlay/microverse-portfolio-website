@@ -400,6 +400,10 @@ a {
   top: calc(50% - 80px / 2);
 }
 
+.circle-img img:hover {
+  transform: scale(2);
+}
+
 .abts-head {
   width: 337px;
   height: 32px;
