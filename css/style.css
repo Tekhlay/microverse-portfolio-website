@@ -226,10 +226,6 @@ a {
   height: 250px;
 }
 
-img {
-  max-width: 100%;
-}
-
 .work-title {
   width: 295px;
   height: 57px;
@@ -827,9 +823,6 @@ img {
 
   .txt2 {
     display: block;
-  }
-
-  .txt2 {
     width: 100%;
     height: 114px;
     margin: 24px;
