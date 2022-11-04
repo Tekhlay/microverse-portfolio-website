@@ -207,6 +207,10 @@ li {
   height: 252px;
 }
 
+.social-link img:hover {
+  transform: scale(2);
+}
+
 .txt-info {
   max-width: 100%;
   display: flex;
@@ -392,10 +396,9 @@ li {
   top: calc(50% - 80px / 2);
 }
 
-/* .circle-img img:hover {
-  transform: scale(2);
+.circle-img img:hover {
   transform: rotate(90deg);
-} */
+}
 
 .abts-head {
   font-family: 'Inter', sans-serif;
@@ -487,12 +490,14 @@ li {
   align-items: center;
 }
 
-/* .fulname:hover {
-  transform: translate(20px, 0px);
-} */
-
 .txt2 {
   display: none;
+}
+
+.txt2:hover,
+.email:hover,
+.fulname:hover {
+  transform: translate(20px, 0);
 }
 
 .footer-form .txt1 {
