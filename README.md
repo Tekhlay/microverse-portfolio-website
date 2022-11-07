@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-- clicc here to view demo of the portifolio site (https://tekhlay.github.io/microverse-portfolio-website/)
+- click here to view demo of the portifolio site (https://tekhlay.github.io/microverse-portfolio-website/)
 
 # Authors
 
