@@ -15,6 +15,10 @@
 - Press the "Code" button and copy the link.
 - Finally, Clone it using git command git clone (https://github.com/Tekhlay/microverse-portfolio-website.git)
 
+## Live Demo
+
+- clicc here to view demo of the portifolio site (https://tekhlay.github.io/microverse-portfolio-website/)
+
 # Authors
 
 👤 **Tekhlay**
