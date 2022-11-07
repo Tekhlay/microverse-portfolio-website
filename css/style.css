@@ -362,7 +362,7 @@ li {
 
 .abt-btn:hover {
   cursor: pointer;
-  background-color: blue;
+  background-color:goldenrod;
 }
 
 .abt-card {
@@ -755,7 +755,7 @@ li {
     align-items: flex-start;
     justify-content: left;
     padding: 0;
-    gap: 4px;
+    gap: 24px;
   }
 
   .txt1 {
