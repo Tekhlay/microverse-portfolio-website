@@ -389,6 +389,7 @@ li {
 
 .abt-card:hover {
   transform: scale(1.03);
+  transition-delay: 3ms;
 }
 
 .circle-img {
@@ -397,7 +398,18 @@ li {
 }
 
 .circle-img img:hover {
-  transform: rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  /* transform: rotate(90deg); */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .abts-head {
