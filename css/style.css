@@ -400,6 +400,7 @@ li {
 .circle-img img:hover {
   animation-name: rotate;
   animation-duration: 0.7s;
+
   /* transform: rotate(90deg); */
 }
 
@@ -407,6 +408,7 @@ li {
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }
