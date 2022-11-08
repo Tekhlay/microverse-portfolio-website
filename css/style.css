@@ -11,7 +11,8 @@ body {
 
 /* .header-container {
   max-width: 100% !important;
-} */
+  overflow: hidden;
+}  */
 
 .header-top {
   margin: 15px 0;
@@ -92,7 +93,6 @@ body {
 .h-span {
   text-align: center;
   color: #237855;
-  overflow-x: hidden;
 }
 
 .heder-info {
@@ -167,6 +167,7 @@ li {
 
 .work-card {
   width: 375px;
+  overflow: hidden;
 }
 
 .myrecentwork {
@@ -180,7 +181,6 @@ li {
   position: relative;
   text-align: center;
   color: #172b4d;
-  overflow: hidden;
 }
 
 .ind {
@@ -211,6 +211,7 @@ li {
 
 .social-link img:hover {
   transform: scale(2);
+  transition: all 0.5s ease-out;
 }
 
 .txt-info {
@@ -541,7 +542,7 @@ li {
     background: url(../images/Header-llustration-desktop.png) no-repeat;
     background-size: 100%;
     overflow: hidden;
-    height: 1434.3px;
+    height: 1134px;
     left: 27px;
     top: -398px;
   }
@@ -649,7 +650,7 @@ li {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 1244px;
+    height: 1200px;
     left: 135px;
     top: 0;
     margin-top: 0%;
@@ -689,7 +690,7 @@ li {
     padding: 80px 0;
     gap: 48px;
     width: 100%;
-    height: 808px;
+    height: 700px;
     left: 135px;
     top: 2331px;
   }
@@ -700,7 +701,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
   }
 
   .abtme {
@@ -733,14 +734,14 @@ li {
 
   .footer-container {
     background:
-      url(../images/contact\ form-illustratoin-3-desktop.png) no-repeat 100% 90%,
-      url(../images/illustration-2-contact-form-desktop@2x.png) no-repeat 30% 90%,
-      url(../images/illustration-1-contact-form-desktop.png) no-repeat 0% 90%;
+      url(../images/contact\ form-illustratoin-3-desktop.png) no-repeat 100% 50%,
+      url(../images/illustration-2-contact-form-desktop@2x.png) no-repeat 20% 70%,
+      url(../images/illustration-1-contact-form-desktop.png) no-repeat 0% 70%;
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
     width: 100%;
-    height: 490px;
+    height: 590px;
     left: 135px;
     top: 3139px;
   }
@@ -753,7 +754,6 @@ li {
     padding: 80px 0;
     gap: 24px;
     width: 1171px;
-    height: 490px;
   }
 
   .footer-title h2 {
@@ -813,7 +813,17 @@ li {
   }
 
   .footer-container .social-link {
-    margin-top: 112px;
+    margin-top: 50px;
+    margin-bottom: 26px;
+    border-top: 1px solid  #DFE1E6;
+    width: 100%;
+    height: 110px;
+    justify-content: center;
+  }
+
+  .footer-container .social-link .medias{
+    margin: 28px 0px;
+
   }
 
   .emai-address {
