@@ -11,22 +11,32 @@
 <body>
     <!--Header Starts Here-->
     <header class="header-container">
-        <div class="header-top">
+        <nav class="nav-top">
             <a href="#" class="header-logo">Welcome</a>
-            <button class="hamburger" type="button">
-                <i class="fa fa-solid fa-bars"></i>
+            <button class="hamburger" id="menu-bar" type="button">
+               <i class="fa fa-solid fa-bars"></i>
             </button>
-            <nav>
-                <ul class="header-nav-desktop">
+            <ul class="header-nav-desktop">
                     <li><a href="">Portifolio</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu" id="menu-mobile">
+            <div class="menu-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="menu-body">
+                <ul>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
 
     <!--Headline starts Here-->
-    <section class="headline">
+    <div class="headline">
         <div class="header-title">
             <h1>Hey there. I’m Tekhlay. </h1>
             <h2><span class="h-span">I’m a software developer</span></h2>
@@ -49,7 +59,7 @@
                 <i class="fa fa-solid fa-angle-down"></i>
             </button>
         </div>
-    </section>
+    </div>
 </header>
 <!--Header Ends Here-->
 <!--Work card content starts Here-->
@@ -236,5 +246,6 @@
         </div>
     </footer>
     <!--Footer content ends Here-->
+    <script src="index.js"></script>
 </body>
 </html>
