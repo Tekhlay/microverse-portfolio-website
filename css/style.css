@@ -58,8 +58,12 @@ body {
 
 .mobile-menu {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
   width: 375px;
-  height: 755px;
+  height: 812px;
   background: #fff;
   bottom: 57px;
   box-shadow: 0 48px 48px rgb(37, 47, 137, 0.08);
@@ -76,6 +80,7 @@ body {
   font-size: 30px;
   color: #67798e;
   float: right;
+  padding: 60px 38px 0 0;
 }
 
 .close:hover,
@@ -99,8 +104,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  left: 12px;
+  left: 28px;
   top: 92px;
+  margin: 28px;
 }
 
 .languages li {
@@ -126,6 +132,8 @@ body {
   width: 351px;
   height: 56px;
   border-radius: 8px;
+  padding: 20px;
+  margin-left: 58px;
 }
 
 .menu-body a {
