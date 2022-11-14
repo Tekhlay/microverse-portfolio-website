@@ -15,3 +15,7 @@ window.onclick = function(event) {
       modal.style.display = "none";
     }
 }
+
+menu.onclick = function close() {
+        menu.style.display = "none"
+    }
