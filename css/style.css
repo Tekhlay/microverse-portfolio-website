@@ -46,7 +46,7 @@ body {
 
 .hamburger {
   width: 40px;
-  height:40px;
+  height: 40px;
   border: none;
   float: right;
   margin-left: 46%;
@@ -60,9 +60,9 @@ body {
   display: none;
   width: 375px;
   height: 755px;
-  background: #ffffff;
+  background: #fff;
   bottom: 57px;
-  box-shadow:0px 48px 48px rgb(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgb(37, 47, 137, 0.08);
 }
 
 .menu-header {
@@ -78,11 +78,15 @@ body {
   float: right;
 }
 
-.close:hover, 
+.close:hover,
 .close:focus {
   text-decoration: none;
   color: #28352f;
   cursor: pointer;
+}
+
+.medias li {
+  margin: 0 8px;
 }
 
 .menu-body {
@@ -99,6 +103,25 @@ body {
   top: 92px;
 }
 
+.languages li {
+  padding: 0 8px;
+}
+
+.works-details li {
+  width: max-content;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  margin: 10px 5px;
+  text-align: center;
+}
+
 .menu-body ul li {
   width: 351px;
   height: 56px;
@@ -107,12 +130,12 @@ body {
 
 .menu-body a {
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #3a4a42; 
+  color: #3a4a42;
 }
 
 .headline {
@@ -196,10 +219,6 @@ body {
   max-width: fit-content;
 }
 
-.medias li {
-  margin: 0 8px;
-}
-
 .medias i:hover {
   transform: scale(2);
   transition: all 0.5s ease-out;
@@ -257,7 +276,7 @@ body {
   margin: 24px 160px;
 }
 
-.work-container-card{
+.work-container-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,10 +337,6 @@ body {
   flex-direction: row;
   align-items: center;
   list-style: none;
-}
-
-.languages li {
-  padding: 0 8px;
 }
 
 .languages li a {
@@ -511,21 +526,6 @@ body {
   list-style: none;
   margin-top: 30px;
   justify-content: center;
-}
-
-.works-details li {
-  width: max-content;
-  background: #fff;
-  border-radius: 8px;
-  padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
-  margin: 10px 5px;
-  text-align: center;
 }
 
 .footer-container {
