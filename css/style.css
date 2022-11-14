@@ -62,25 +62,24 @@ body {
   left: 0;
   top: 0;
   z-index: 1;
-  width: 375px;
+  width: 425px;
   height: 812px;
   background: #fff;
-  bottom: 57px;
+  border-radius: 0 0 50px 50px;
   box-shadow: 0 48px 48px rgb(37, 47, 137, 0.08);
 }
 
 .menu-header {
-  top: 44px;
-  width: 375px;
+  width: 100%;
   height: 48px;
+  margin: 0.5em 0.5em;
 }
 
 .close {
-  height: 12px;
-  font-size: 30px;
+  font-size: 35px;
   color: #67798e;
   float: right;
-  padding: 60px 38px 0 0;
+  padding: 0 38px 0 0;
 }
 
 .close:hover,
@@ -95,7 +94,7 @@ body {
 }
 
 .menu-body {
-  width: 351px;
+  width: 100%;
   height: 184px;
 }
 
@@ -106,7 +105,8 @@ body {
   gap: 8px;
   left: 28px;
   top: 92px;
-  margin: 28px;
+  margin: 28px 0 0 1px;
+  list-style: none;
 }
 
 .languages li {
@@ -132,8 +132,11 @@ body {
   width: 351px;
   height: 56px;
   border-radius: 8px;
-  padding: 20px;
-  margin-left: 58px;
+  margin-left: 28px;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .menu-body a {
