@@ -9,23 +9,23 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-/* .header-container {
-  max-width: 100% !important;
-  overflow: hidden;
-}  */
+.header-container {
+  width: 375px;
+  height: 812px;
+  background: #fff;
+}
 
-.header-top {
+.nav-top {
+  position: fixed;
   margin: 15px 0;
   display: flex;
+  flex-direction: row;
   padding: 0 35px;
-  justify-content: space-between;
   align-items: center;
   width: 375px;
   height: 48px;
-  left: 0;
   top: 44px;
-  border-radius: 0;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .header-logo {
@@ -47,7 +47,8 @@ body {
 }
 
 .hamburger {
-  width: 20px;
+  width: 40px;
+  height: 40px;
   border: none;
   float: right;
   margin-left: 46%;
@@ -55,6 +56,99 @@ body {
 
 .header-nav-desktop {
   display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 425px;
+  height: 812px;
+  background: #fff;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 48px 48px rgb(37, 47, 137, 0.08);
+}
+
+.menu-header {
+  width: 100%;
+  height: 48px;
+  margin: 0.5em 0.5em;
+}
+
+.close {
+  font-size: 35px;
+  color: #67798e;
+  float: right;
+  padding: 0 38px 0 0;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  color: #28352f;
+  cursor: pointer;
+}
+
+.medias li {
+  margin: 0 8px;
+}
+
+.menu-body {
+  width: 100%;
+  height: 184px;
+}
+
+.menu-body ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  left: 28px;
+  top: 92px;
+  margin: 28px 0 0 1px;
+  list-style: none;
+}
+
+.languages li {
+  padding: 0 8px;
+}
+
+.works-details li {
+  width: max-content;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  margin: 10px 5px;
+  text-align: center;
+}
+
+.menu-body ul li {
+  width: 351px;
+  height: 56px;
+  border-radius: 8px;
+  margin-left: 28px;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu-body a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
 }
 
 .headline {
@@ -138,10 +232,6 @@ body {
   max-width: fit-content;
 }
 
-.medias li {
-  margin: 0 8px;
-}
-
 .medias i:hover {
   transform: scale(2);
   transition: all 0.5s ease-out;
@@ -151,8 +241,8 @@ body {
   width: 40px;
   height: 40px;
   padding: 8px;
-  left: calc(10% - 40px / 2);
-  bottom: 24px;
+  left: 50%;
+  bottom: 100px;
   position: absolute;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -173,6 +263,9 @@ body {
 .work-card {
   width: 375px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .myrecentwork {
@@ -194,6 +287,13 @@ body {
   background: #36b37e;
   border-radius: 24px;
   margin: 24px 160px;
+}
+
+.work-container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .work-container {
@@ -250,10 +350,6 @@ body {
   flex-direction: row;
   align-items: center;
   list-style: none;
-}
-
-.languages li {
-  padding: 0 8px;
 }
 
 .languages li a {
@@ -445,21 +541,6 @@ body {
   justify-content: center;
 }
 
-.works-details li {
-  width: max-content;
-  background: #fff;
-  border-radius: 8px;
-  padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
-  margin: 10px 5px;
-  text-align: center;
-}
-
 .footer-container {
   width: 375px;
   display: flex;
@@ -480,6 +561,7 @@ body {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  margin-top: 60px;
 }
 
 .footer-form {
@@ -552,13 +634,14 @@ body {
     top: -398px;
   }
 
-  .header-top {
+  .nav-top {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 0;
+    overflow: hidden;
   }
 
   .header-logo,
@@ -644,7 +727,7 @@ body {
     align-items: center;
     margin: 34px 120px 40px;
     position: absolute;
-    left: 35%;
+    left: 20%;
     right: 25%;
     top: 37.5%;
     bottom: 37.5%;
