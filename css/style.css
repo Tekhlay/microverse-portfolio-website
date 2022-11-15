@@ -16,6 +16,7 @@ body {
 }
 
 .nav-top {
+  position: fixed;
   margin: 15px 0;
   display: flex;
   flex-direction: row;
@@ -24,6 +25,7 @@ body {
   width: 375px;
   height: 48px;
   top: 44px;
+  z-index: 1;
 }
 
 .header-logo {
@@ -58,7 +60,7 @@ body {
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 1;
