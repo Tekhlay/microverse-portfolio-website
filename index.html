@@ -67,102 +67,7 @@
         <h1 class="myrecentwork">My Recent Works</h1>
         <img class="ind" src="images/Indicator.png" alt="Indicator image goes here">
         <div class="work-container-card">
-            <div class="work-container">
-                <div class="img-placer">
-                    <img src="images/im1.png" alt="Multi-Post Stories Gain+Glory">
-                </div>
-                <div class="txt-info">
-                    <h2 class="work-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="languages">
-                        <li><a href="">Ruby on rails</a></li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">html</a></li>
-                    </ul>
-                    <button class="see-project" type="button">
-                        <span class="project-title">See Project</span> </button>
-                </div>
-            </div>
-            <div class="work-container">
-                <div class="img-placer">
-                    <img src="images/im1.png" alt="My second project sample image">
-                </div>
-                <div class="txt-info">
-                    <h2 class="work-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="languages">
-                        <li><a href="#">Ruby on rails</a></li>
-                        <li><a href="#">css</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">html</a></li>
-                    </ul>
-                    <button class="see-project" type="button">
-                        <span class="project-title">See Project</span> </button>
-                </div>
-            </div>
-            <div class="work-container">
-                <div class="img-placer">
-                    <img src="images/im1.png" alt="My third project sample image">
-                </div>
-                <div class="txt-info">
-                    <h2 class="work-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="languages">
-                        <li><a href="">Ruby on rails</a></li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">html</a></li>
-                    </ul>
-                    <button class="see-project" type="button">
-                        <span class="project-title">See Project</span> </button>
-                </div>
-            </div>
-            <div class="work-container">
-                <div class="img-placer">
-                    <img src="images/im1.png" alt="My fourth project sample image">
-                </div>
-                <div class="txt-info">
-                    <h2 class="work-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="languages">
-                        <li><a href="">Ruby on rails</a></li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">html</a></li>
-                    </ul>
-                    <button class="see-project" type="button">
-                        <span class="project-title">See Project</span> </button>
-                </div>
-            </div>
-            <div class="work-container">
-                <div class="img-placer">
-                    <img src="images/im1.png" alt="My fifth project sample image">
-                </div>
-                <div class="txt-info">
-                    <h2 class="work-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="languages">
-                        <li><a href="">Ruby on rails</a></li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">html</a></li>
-                    </ul>
-                    <button class="see-project" type="button">
-                        <span class="project-title">See Project</span> </button>
-                </div>
-            </div>
-            <div class="work-container">
-                <div class="img-placer">
-                    <img src="images/im1.png" alt="My sixth project sample image">
-                </div>
-                <div class="txt-info">
-                    <h2 class="work-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="languages">
-                        <li><a href="">Ruby on rails</a></li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">html</a></li>
-                    </ul>
-                    <button class="see-project" type="button">
-                        <span class="project-title">See Project</span> </button>
-                </div>
-            </div>
+            
         </div>
     </section>
     <!--Work card content ends Here-->
@@ -222,15 +127,15 @@
                 <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             </div>
             
-            <form class="footer-form" action="https://formspree.io/f/myyvbggy" method="post">
+            <form class="footer-form" action="https://formspree.io/f/myyvbggy" method="POST">
                 <!-- <div class="full-name">
                     <input name="firstname" class="frstn" type="text" placeholder="First Name" maxlength="30" required>
                 <input name="fullname" class="lstn" type="text" placeholder="Last Name" maxlength="30" required>
                 </div> -->
-                <input name="fullname" class="fulname" type="text" placeholder="Full name" maxlength="30" required>
-                <input name="email" class="email" type="email" placeholder="Email address" required>
-                <textarea name="message" class="txt1" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
-                <textarea name="message1" class="txt2" cols="30" rows="5" maxlength="500" placeholder="Type something" required></textarea>
+                <input name="fullname" id="userfullname" class="fulname" type="text" placeholder="Full name" maxlength="30" required>
+                <input name="email" id="useremail" class="email" type="email" placeholder="Email address" required>
+                <textarea name="message1" id="usermessage" class="txt2" cols="30" rows="5" maxlength="500" placeholder="Type something" required></textarea>
+                <span class="error_message"></span>
                 <button class="abt-btn" type="submit">Get in touch</button>
             </form>
         </div>
@@ -246,6 +151,7 @@
         </div>
     </footer>
     <!--Footer content ends Here-->
+    
     <script src="index.js"></script>
 </body>
 </html>

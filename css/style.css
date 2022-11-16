@@ -130,6 +130,11 @@ body {
   text-align: center;
 }
 
+.detail-tags li {
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
 .menu-body ul li {
   width: 351px;
   height: 56px;
@@ -352,6 +357,27 @@ body {
   list-style: none;
 }
 
+.detail-tags a {
+  letter-spacing: 0.03em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.btn-detail a {
+  width: 100%;
+  text-decoration: none;
+  background: #36b37f;
+  border-radius: 4px;
+  padding: 12px;
+  color: #fff;
+}
+
 .languages li a {
   background: #ebf0ee;
   border-radius: 4px;
@@ -384,7 +410,7 @@ body {
   left: calc(50% - 122px / 2 + 0.5px);
   bottom: 8px;
   border: 0;
-  background: #36b37f;
+  background: #227452;
   border-radius: 4px;
 }
 
@@ -453,7 +479,7 @@ body {
 .abt-btn {
   margin: 24px 92px;
   padding: 12px;
-  background: #36b37f;
+  background: #227452;
   border-radius: 4px;
   border: none;
   color: #fff;
@@ -500,6 +526,11 @@ body {
 .circle-img {
   left: calc(50% - 80px / 2 + 0.5px);
   top: calc(50% - 80px / 2);
+}
+
+.work-details-card img {
+  height: 220px;
+  max-width: 100%;
 }
 
 .circle-img img:hover {
@@ -597,20 +628,16 @@ body {
   align-items: center;
 }
 
-.txt2 {
-  display: none;
-}
-
 .txt2:hover,
 .email:hover,
 .fulname:hover {
   transform: translate(20px, 0);
 }
 
-.footer-form .txt1 {
+.footer-form .txt2 {
   width: 100%;
-  height: 114px;
-  margin: 24px;
+  height: 90px;
+  margin-top: 10px;
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #60c095;
@@ -621,6 +648,98 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
+  z-index: 1;
+}
+
+.error_message {
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+  color: red;
+}
+
+.work-details-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  gap: 6px;
+  padding: 16px;
+  width: 343px;
+  height: 90%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.close-details {
+  font-size: 30px;
+  position: absolute;
+  top: 3%;
+  right: 8%;
+  background: none;
+  color: white;
+}
+
+.close-details:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.img-details {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-name {
+  width: 359px;
+  height: 115px;
+  margin: 14px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #172b4d;
+}
+
+.detail-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 246px;
+  height: 32px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.project-desc {
+  width: 311px;
+  height: 313px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.btn-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 12px;
+  width: 300px;
+  height: 48px;
+  left: 0;
+  top: 4px;
 }
 
 @media (min-width: 768px) {
@@ -666,6 +785,27 @@ body {
     line-height: 20px;
     color: #344563;
     margin: 16px;
+  }
+
+  .detail-tags a {
+    letter-spacing: 0.03em;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3a4a42;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .btn-detail a {
+    width: 100%;
+    text-decoration: none;
+    background: #36b37f;
+    border-radius: 4px;
+    padding: 12px;
+    color: #fff;
   }
 
   .header-nav-desktop a:hover {
@@ -770,6 +910,110 @@ body {
     left: 135px;
   }
 
+  .work-details-card {
+    position: fixed;
+    padding: 16px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .close-details {
+    background: #ebecf0;
+    opacity: 0.7;
+    mix-blend-mode: normal;
+    border-radius: 8px;
+    position: relative;
+    left: calc(100% - 140px / 2 - 37.5px);
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+    right: 24px;
+    top: 0;
+    color: #67798e;
+    margin: 14px;
+  }
+
+  .close-details:hover {
+    cursor: pointer;
+    color: blue;
+  }
+
+  img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .img-details {
+    width: 920px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 14px;
+  }
+
+  .project-name {
+    width: 100%;
+    height: 135px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin-top: 12px;
+  }
+
+  .detail-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    width: 100%;
+    height: 32px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 12px 0 12px 0;
+  }
+
+  .detail-tags li {
+    background: #ebecf0;
+    border-radius: 4px;
+  }
+
+  .project-desc {
+    width: 100%;
+    height: 313px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .btn-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    padding: 12px 16px;
+    gap: 12px;
+    width: 280px;
+    height: 48px;
+    left: 1000px;
+    top: 320px;
+    float: right;
+  }
+
   .abt {
     background: url(../images/illustration\ about\ me\ desktop.png) no-repeat 100% 0%, url(../images/illustration-about-me-2-desktop.png) no-repeat 0 200px;
     display: flex;
@@ -811,6 +1055,7 @@ body {
     width: 159px;
     height: 48px;
     justify-content: center;
+    position: inherit;
   }
 
   .abt-card {
@@ -863,11 +1108,7 @@ body {
     align-items: flex-start;
     justify-content: left;
     padding: 0;
-    gap: 24px;
-  }
-
-  .txt1 {
-    display: none;
+    gap: 14px;
   }
 
   .fulname,
@@ -875,24 +1116,6 @@ body {
     height: 40px;
     margin: 2px;
     float: left;
-  }
-
-  .txt2 {
-    display: block;
-    width: 100%;
-    height: 60px;
-    margin: 0;
-    padding: 0 0 0;
-    box-sizing: border-box;
-    background: #fff;
-    border: 1px solid #60c095;
-    border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #091e42;
   }
 
   .footer-form button {
