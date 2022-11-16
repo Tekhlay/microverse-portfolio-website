@@ -528,6 +528,11 @@ body {
   top: calc(50% - 80px / 2);
 }
 
+.work-details-card img {
+  height: 220px;
+  max-width: 100%;
+}
+
 .circle-img img:hover {
   animation-name: rotate;
   animation-duration: 0.7s;
@@ -623,20 +628,16 @@ body {
   align-items: center;
 }
 
-.txt2 {
-  display: none;
-}
-
 .txt2:hover,
 .email:hover,
 .fulname:hover {
   transform: translate(20px, 0);
 }
 
-.footer-form .txt1 {
+.footer-form .txt2 {
   width: 100%;
-  height: 114px;
-  margin: 24px;
+  height: 90px;
+  margin-top: 10px;
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #60c095;
@@ -650,8 +651,15 @@ body {
   z-index: 1;
 }
 
+.error_message {
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+  color: red;
+}
+
 .work-details-card {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -662,8 +670,8 @@ body {
   gap: 6px;
   padding: 16px;
   width: 343px;
-  height: 100%;
-  overflow: auto;
+  height: 90%;
+  overflow: hidden;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -684,21 +692,18 @@ body {
 }
 
 .img-details {
-  width: 100%;
-  min-height: 220px;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .project-name {
   width: 359px;
-  height: 135px;
-  margin: 24px;
+  height: 115px;
+  margin: 14px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 20px;
   color: #172b4d;
 }
 
@@ -925,14 +930,15 @@ body {
     opacity: 0.7;
     mix-blend-mode: normal;
     border-radius: 8px;
-    position: absolute;
+    position: relative;
+    left: calc(100% - 140px / 2 - 37.5px);
     padding-left: 10px;
-    margin: 0 0 0 64px;
     width: 40px;
-    height: 30px;
+    height: 40px;
     right: 24px;
-    top: -10px;
+    top: 0;
     color: #67798e;
+    margin: 14px;
   }
 
   .close-details:hover {
@@ -962,7 +968,7 @@ body {
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
-    margin: 24px;
+    margin-top: 12px;
   }
 
   .detail-tags {
@@ -975,10 +981,11 @@ body {
     height: 32px;
     list-style: none;
     flex-wrap: wrap;
+    margin: 12px 0 12px 0;
   }
 
   .detail-tags li {
-    background: #ebf0ee;
+    background: #ebecf0;
     border-radius: 4px;
   }
 
@@ -1003,7 +1010,7 @@ body {
     width: 280px;
     height: 48px;
     left: 1000px;
-    top: 340px;
+    top: 320px;
     float: right;
   }
 
@@ -1048,6 +1055,7 @@ body {
     width: 159px;
     height: 48px;
     justify-content: center;
+    position: inherit;
   }
 
   .abt-card {
@@ -1100,11 +1108,7 @@ body {
     align-items: flex-start;
     justify-content: left;
     padding: 0;
-    gap: 24px;
-  }
-
-  .txt1 {
-    display: none;
+    gap: 14px;
   }
 
   .fulname,
@@ -1112,24 +1116,6 @@ body {
     height: 40px;
     margin: 2px;
     float: left;
-  }
-
-  .txt2 {
-    display: block;
-    width: 100%;
-    height: 60px;
-    margin: 0;
-    padding: 0 0 0;
-    box-sizing: border-box;
-    background: #fff;
-    border: 1px solid #60c095;
-    border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #091e42;
   }
 
   .footer-form button {
