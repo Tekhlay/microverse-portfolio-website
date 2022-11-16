@@ -225,17 +225,16 @@ const workdetailsSection = (content) => `
         <a href="${WorkDatas[content].linksource}"> See Source <i class="fa fa-github"></i></a>
     </div>
  `;
-
-  for (let i = 0; i < details.length; i++) {
-    details[i].addEventListener('click', () => {
-      const create_div = document.createElement('div');
-      create_div.className = "work-details-card";
-      create_div.innerHTML = workdetailsSection(i);
-      workid.appendChild(create_div);
-      // document.body.appendChild(create_div);
-      const closedetails = document.querySelector('.close-details');
-      closedetails.addEventListener('click', async =>{
-        workid.removeChild(create_div);
-      }) 
-    });
-  }
+ for (let i = 0; i < details.length; i++) {
+  details[i].addEventListener('click', () => {
+  const create_div = document.createElement('div');
+  create_div.className = "work-details-card";
+  create_div.innerHTML = workdetailsSection(i);
+  workid.appendChild(create_div);
+  // document.body.appendChild(create_div);
+  const closedetails = document.querySelector('.close-details');
+  closedetails.addEventListener('click', async =>{
+  workid.removeChild(create_div);
+}) 
+});
+}

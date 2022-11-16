@@ -130,6 +130,11 @@ body {
   text-align: center;
 }
 
+.detail-tags li {
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
 .menu-body ul li {
   width: 351px;
   height: 56px;
@@ -350,6 +355,27 @@ body {
   flex-direction: row;
   align-items: center;
   list-style: none;
+}
+
+.detail-tags a {
+  letter-spacing: 0.03em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.btn-detail a {
+  width: 100%;
+  text-decoration: none;
+  background: #36b37f;
+  border-radius: 4px;
+  padding: 12px;
+  color: #fff;
 }
 
 .languages li a {
@@ -638,8 +664,8 @@ body {
   width: 343px;
   height: 100%;
   overflow: auto;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
@@ -655,7 +681,6 @@ body {
 .close-details:hover {
   cursor: pointer;
   color: blue;
-
 }
 
 .img-details {
@@ -666,43 +691,27 @@ body {
 }
 
 .project-name {
-  width: 259px;
+  width: 359px;
   height: 135px;
+  margin: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .detail-tags {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 246px;
   height: 32px;
   list-style: none;
   flex-wrap: wrap;
-}
-
-.detail-tags li {
-  background: #EBF0EE;
-  border-radius: 4px;
-}
-
-.detail-tags a {
-  letter-spacing: 0.03em;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3A4A42;
-  padding: 8px;
-  text-decoration: none;
 }
 
 .project-desc {
@@ -722,19 +731,10 @@ body {
   align-items: flex-start;
   padding: 12px 16px;
   gap: 12px;
-  width:300px;
+  width: 300px;
   height: 48px;
-  left: 0px;
+  left: 0;
   top: 4px;
-}
-
-.btn-detail a {
-  width: 100%;
-  text-decoration: none;
-  background: #36B37F;
-  border-radius: 4px;
-  padding: 12px;
-  color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
@@ -780,6 +780,27 @@ body {
     line-height: 20px;
     color: #344563;
     margin: 16px;
+  }
+
+  .detail-tags a {
+    letter-spacing: 0.03em;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3a4a42;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .btn-detail a {
+    width: 100%;
+    text-decoration: none;
+    background: #36b37f;
+    border-radius: 4px;
+    padding: 12px;
+    color: #fff;
   }
 
   .header-nav-desktop a:hover {
@@ -883,23 +904,24 @@ body {
     position: absolute;
     left: 135px;
   }
-  
+
   .work-details-card {
     position: fixed;
     padding: 16px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     z-index: 1;
-    background: #FFFFFF;
-    border: 1px solid #EBECF0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 8px;
     width: 100%;
   }
+
   .close-details {
-    background: #EBECF0;
+    background: #ebecf0;
     opacity: 0.7;
     mix-blend-mode: normal;
     border-radius: 8px;
@@ -909,17 +931,20 @@ body {
     width: 40px;
     height: 30px;
     right: 24px;
-    top:-10px;
-    color: #67798E;
+    top: -10px;
+    color: #67798e;
   }
+
   .close-details:hover {
     cursor: pointer;
     color: blue;
   }
+
   img {
     width: 100%;
     height: 50%;
   }
+
   .img-details {
     width: 920px;
     height: 220px;
@@ -927,6 +952,7 @@ body {
     border-radius: 8px;
     margin: 14px;
   }
+
   .project-name {
     width: 100%;
     height: 135px;
@@ -935,35 +961,27 @@ body {
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-    color: #172B4D;
+    color: #172b4d;
     margin: 24px;
   }
+
   .detail-tags {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 8px;
     width: 100%;
     height: 32px;
     list-style: none;
     flex-wrap: wrap;
   }
+
   .detail-tags li {
-    background: #EBF0EE;
+    background: #ebf0ee;
     border-radius: 4px;
   }
-  .detail-tags a {
-    letter-spacing: 0.03em;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    color: #3A4A42;
-    padding: 8px;
-    text-decoration: none;
-  }
+
   .project-desc {
     width: 100%;
     height: 313px;
@@ -974,6 +992,7 @@ body {
     line-height: 24px;
     color: #344563;
   }
+
   .btn-detail {
     display: flex;
     flex-direction: row;
@@ -987,15 +1006,6 @@ body {
     top: 340px;
     float: right;
   }
-  .btn-detail a {
-    width: 100%;
-    text-decoration: none;
-    background: #36B37F;
-    border-radius: 4px;
-    padding: 12px;
-    color: #FFFFFF;
-  }
-  
 
   .abt {
     background: url(../images/illustration\ about\ me\ desktop.png) no-repeat 100% 0%, url(../images/illustration-about-me-2-desktop.png) no-repeat 0 200px;
