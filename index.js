@@ -124,9 +124,9 @@ const details = document.querySelectorAll('.see-project');
 const WorkDatas = [
   {
     id: 0,
-    url: './images/Snapshoot_Portfolio-mobile.png',
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    url: './images/project1.png',
+    title: 'Build React JS based Web Application',
+    description: 'You will have to create a react js single web application with a front that seems like a blog website and should be also mobile-friendly and add some features like a mobile menu and the main thing here is the ability to navigate through pages without refreshing the browser',
     tecnologies: {
       tech1: 'Ruby on rails',
       tech2: 'css',
@@ -138,21 +138,22 @@ const WorkDatas = [
   },
   {
     id: 1,
-    url: './images/Snapshoot_Portfolio-mobile.png',
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    url: './images/project2.png',
+    title: 'Building Tic Tac Toe in React',
+    description: 'In this project, you will build a Tic Tac Toe game with three rows and columns as usually with two players start making X and O and the first who complete a line vertically or horizontally wins and they need to prevent each other from doing that otherwise one of them will win the game.',
     tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
+      tech1: 'Codekit',
+      tech2: 'Github',
       tech3: 'JavaScript',
-      tech4: 'html',
+      tech4: 'Terminal',
+      tech5: 'Bootstrap',
     },
     linklive: 'https://tekhlay.github.io/microverse-portfolio-website/',
     linksource: 'https://github.com/Tekhlay/microverse-portfolio-website',
   },
   {
     id: 2,
-    url: './images/Snapshoot_Portfolio-mobile.png',
+    url: './images/project3.png',
     title: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     tecnologies: {
@@ -166,9 +167,9 @@ const WorkDatas = [
   },
   {
     id: 3,
-    url: './images/Snapshoot_Portfolio-mobile.png',
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    url: './images/project4.png',
+    title: 'Build a CryptoCurrency Tracker App using React Native',
+    description: 'The idea is great and you can actually put this app into App Store or Google PlayStore as React Native allows you to create cross-platform apps. You can use React.js, React Native, and Firebase to build the course, where Firebase can be used to build the backend.',
     tecnologies: {
       tech1: 'Ruby on rails',
       tech2: 'css',
@@ -180,7 +181,7 @@ const WorkDatas = [
   },
   {
     id: 4,
-    url: './images/Snapshoot_Portfolio-mobile.png',
+    url: './images/project1.png',
     title: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     tecnologies: {
@@ -194,7 +195,7 @@ const WorkDatas = [
   },
   {
     id: 5,
-    url: './images/Snapshoot_Portfolio-mobile.png',
+    url: './images/project2.png',
     title: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     tecnologies: {
@@ -216,6 +217,7 @@ const workdetailsSection = (content) => `
         <li><a href="">${WorkDatas[content].tecnologies.tech1}</a></li>
         <li><a href="">${WorkDatas[content].tecnologies.tech2}</a></li>
         <li><a href="">${WorkDatas[content].tecnologies.tech3}</a></li>
+        <li><a href="">${WorkDatas[content].tecnologies.tech4}</a></li>
     </ul>
     <p class="project-desc">${WorkDatas[content].description}</p>
     <div class="btn-detail">
