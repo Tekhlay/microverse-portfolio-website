@@ -225,7 +225,7 @@ const workdetailsSection = (content) => `
         <a href="${WorkDatas[content].linksource}"> See Source <i class="fa fa-github"></i></a>
     </div>
  `;
-for (let i = 0; i < details.length; i + 1) {
+for (let i = 0; i < details.length; i += 1) {
   details[i].addEventListener('click', () => {
     const creatediv = document.createElement('div');
     creatediv.className = 'work-details-card';
@@ -240,8 +240,8 @@ for (let i = 0; i < details.length; i + 1) {
 
 // Form Validation
 const contactForm = document.querySelector('.footer-form');
-//  const fullName = document.querySelector('#userfullname');
-//  const message = document.querySelector('#usermessage');
+const fullName = document.querySelector('#userfullname');
+const message = document.querySelector('#usermessage');
 const email = document.querySelector('#useremail');
 const validation = document.querySelector('.error_message');
 
@@ -253,3 +253,23 @@ contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+const storeElement = {};
+// preserve form data in the browser
+contactForm.addEventListener('input', () => {
+  const preserveData = {
+    Name:fullName.value,
+    Email:email.value,
+    Message:message.value,
+  };
+  const storeData = JSON.stringify(preserveData);
+  storeElement = localStorage.setItem(preserveData,storeData);
+  // sessionStorage.removeItem(storeElement);
+  
+  
+});
+const refield = JSON.parse(storeElement);
+const getData = localStorage.getItem(refield);
+fullName = getData.Name;
+email = getData.Email;
+message = getData.Message;
