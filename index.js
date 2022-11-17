@@ -263,13 +263,10 @@ contactForm.addEventListener('input', () => {
     Message:message.value,
   };
   const storeData = JSON.stringify(preserveData);
-  storeElement = localStorage.setItem(preserveData,storeData);
-  // sessionStorage.removeItem(storeElement);
-  
-  
+  storeElement = localStorage.setItem('refillForm',storeData);
 });
-const refield = JSON.parse(storeElement);
-const getData = localStorage.getItem(refield);
-fullName = getData.Name;
-email = getData.Email;
-message = getData.Message;
+
+const getData = JSON.parse(localStorage.getItem('refillForm'));
+fullName.value = getData.Name;
+email.value = getData.Email;
+message.value = getData.Message;
