@@ -238,3 +238,20 @@ const workdetailsSection = (content) => `
 }) 
 });
 }
+
+
+// Form Validation
+const contactForm = document.querySelector('.footer-form');
+const fullName = document.querySelector('#userfullname');
+const email = document.querySelector('#useremail');
+const message = document.querySelector('#usermessage');
+const validation = document.querySelector('.error_message');
+
+contactForm.addEventListener('submit', (event) => {
+  const character = /[A-Z]/;
+  const emailValue = email.value;
+  if (character.test(emailValue)) {
+    validation.innerHTML = 'Your email shouln\'t contain block letters!';
+    event.preventDefault();
+  }
+});
