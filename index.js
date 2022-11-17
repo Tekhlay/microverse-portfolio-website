@@ -110,7 +110,7 @@ closebar.onclick = function close() {
 };
 
 window.onclick = function exit(event) {
-  if (event.target == menu) {
+  if (event.target === menu) {
     menu.style.display = 'none';
   }
 };
@@ -225,16 +225,31 @@ const workdetailsSection = (content) => `
         <a href="${WorkDatas[content].linksource}"> See Source <i class="fa fa-github"></i></a>
     </div>
  `;
- for (let i = 0; i < details.length; i++) {
+for (let i = 0; i < details.length; i + 1) {
   details[i].addEventListener('click', () => {
-  const create_div = document.createElement('div');
-  create_div.className = "work-details-card";
-  create_div.innerHTML = workdetailsSection(i);
-  workid.appendChild(create_div);
-  // document.body.appendChild(create_div);
-  const closedetails = document.querySelector('.close-details');
-  closedetails.addEventListener('click', async =>{
-  workid.removeChild(create_div);
-}) 
-});
+    const creatediv = document.createElement('div');
+    creatediv.className = 'work-details-card';
+    creatediv.innerHTML = workdetailsSection(i);
+    workid.appendChild(creatediv);
+    const closedetails = document.querySelector('.close-details');
+    closedetails.addEventListener('click', async () => {
+      workid.removeChild(creatediv);
+    });
+  });
 }
+
+// Form Validation
+const contactForm = document.querySelector('.footer-form');
+//  const fullName = document.querySelector('#userfullname');
+//  const message = document.querySelector('#usermessage');
+const email = document.querySelector('#useremail');
+const validation = document.querySelector('.error_message');
+
+contactForm.addEventListener('submit', (event) => {
+  const character = /[A-Z]/;
+  const emailValue = email.value;
+  if (character.test(emailValue)) {
+    validation.innerHTML = 'Your email shouln\'t contain block letters!';
+    event.preventDefault();
+  }
+});
