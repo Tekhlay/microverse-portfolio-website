@@ -254,16 +254,14 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-const storeElement = {};
 // preserve form data in the browser
 contactForm.addEventListener('input', () => {
   const preserveData = {
-    Name:fullName.value,
-    Email:email.value,
-    Message:message.value,
+    Name: fullName.value,
+    Email: email.value,
+    Message: message.value,
   };
-  const storeData = JSON.stringify(preserveData);
-  storeElement = localStorage.setItem('refillForm',storeData);
+  localStorage.setItem('refillForm', JSON.stringify(preserveData));
 });
 
 const getData = JSON.parse(localStorage.getItem('refillForm'));
